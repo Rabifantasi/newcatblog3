@@ -2,7 +2,7 @@ export const blogs = [
   {
     slug: 'cat-care-tips',
     title: 'Cat Care Tips',
-    image: '/cat1.png',
+    image: '/cutecat1.png',
     date: '2024-01-01',
     content: `
 Cat Care Tips
@@ -80,7 +80,7 @@ Litter Box Maintenance:
   {
     slug: 'funny-cat-memes',
     title: 'Funny Cat Memes',
-    image: '/cat2.png',
+    image: '/cutecat2.png',
     date: '2024-02-01',
     content: `
       Funny Cat Memes
@@ -137,7 +137,7 @@ By enjoying these text-based memes, you'll discover why cats are not just pets b
   {
     slug: 'best-cat-toys',
     title: 'Best Cat Toys of 2024',
-    image: '/cat3.png',
+    image: '/cutecat3.png',
     date: '2024-03-01',
     content: `
       Best Cat Toys of 2024
@@ -194,7 +194,7 @@ With these toys, your cat will have hours of fun, stay active, and avoid boredom
   {
     slug: 'healthy-cat-food',
     title: 'Healthy Cat Food Options',
-    image: '/cat4.png',
+    image: '/cutecat4.png',
     date: '2024-04-01',
     content: `
       Healthy Cat Food Options
@@ -251,7 +251,7 @@ Remember, consult your veterinarian before making significant changes to your ca
   {
     slug: 'cat-training-tips',
     title: 'Cat Training Tips',
-    image: '/cat5.png',
+    image: '/cutecat5.png',
     date: '2024-05-01',
     content: `
       Cat Training Tips
@@ -314,7 +314,7 @@ By following these tips, you can build a stronger bond with your cat and encoura
   {
     slug: 'cat-grooming-guide',
     title: 'The Ultimate Cat Grooming Guide',
-    image: '/cat6.png',
+    image: '/cutecat6.png',
     date: '2024-06-01',
     content: `
       The Ultimate Cat Grooming Guide
@@ -377,7 +377,7 @@ By following this guide, your cat will stay clean, healthy, and comfortable. Gro
   {
     slug: 'fun-cat-facts',
     title: '10 Fun Facts About Cats',
-    image: '/cat7.png',
+    image: '/cutecat7.png',
     date: '2024-07-01',
     content: `
       10 Fun Facts About Cats
@@ -452,7 +452,7 @@ These fun facts prove that cats are not just pets—they’re endlessly fascinat
   {
     slug: 'famous-cats',
     title: 'Famous Cats in History',
-    image: '/cat8.png',
+    image: '/cutecat8.png',
     date: '2024-08-01',
     content: `
       Famous Cats in History
@@ -527,7 +527,7 @@ From cartoons to real-life legends, these famous cats prove that felines can tru
   {
     slug: 'cat-health-tips',
     title: 'Cat Health Tips',
-    image: '/cat9.png',
+    image: '/cutecat9.png',
     date: '2024-09-01',
     content: `
       Cat Health Tips
