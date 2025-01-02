@@ -14,37 +14,35 @@ export default function BlogPost({ params }: BlogPostProps) {
   }
 
   return (
-    <article className="max-w-[calc(100%-600px)] mx-auto py-8 px-4 flex flex-col items-left">
-      <h1 className="text-3xl font-bold text-teal-600 text-center">{blog.title}</h1>
-      <p className="text-gray-600 mt-2 text-center">{blog.date}</p>
-      <div className="mt-4">
+    <article className="max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[75%] xl:max-w-[70%] 2xl:max-w-[65%] custom:max-w-[60%] mx-auto py-8 px-4">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-teal-600 text-center">
+        {blog.title}
+      </h1>
+      <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mt-2 text-center">
+        {blog.date}
+      </p>
+      <div className="mt-6">
         <Image 
           src={blog.image} 
           alt={blog.title} 
           className="rounded-md mx-auto" 
-          width={600} // Adjust width according to your layout
-          height={400} // Adjust height according to your layout
+          width={800} 
+          height={500} 
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 70vw, (max-width: 1280px) 60vw, 50vw"
         />
       </div>
-<b>      <p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content}</p></b>
-      <p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content1}</p>
-     <b> <p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content2}</p></b>
-      <p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content3}</p>
-      <b><p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content4}</p></b>
-      <p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content5}</p>
-      <b><p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content6}</p></b>
-      <p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content7}</p>
-      <b><p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content8}</p></b>
-      <p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content9}</p>
-      <b><p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content10}</p></b>
-      <p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content11}</p>
-      <b><p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content12}</p></b>
-      <p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content13}</p>
-      <b><p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content14}</p></b>
-      <p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content15}</p>
-      <b><p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content16}</p></b>
-      <p className="mt-6  text-lg leading-relaxed text-justify ">{blog.content17}</p>
-
+      <div className="mt-6 space-y-6">
+        {[blog.content, blog.content1, blog.content2, blog.content3, blog.content4, blog.content5, blog.content6, blog.content7, blog.content8, blog.content9, blog.content10, blog.content11, blog.content12, blog.content13, blog.content14, blog.content15, blog.content16, blog.content17]
+          .filter(Boolean)
+          .map((content, index) => (
+            <p 
+              key={index} 
+              className={`text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-justify ${index % 2 === 0 ? 'font-bold' : ''}`}
+            >
+              {content}
+            </p>
+          ))}
+      </div>
       <CommentSection slug={blog.slug} />
     </article>
   );
