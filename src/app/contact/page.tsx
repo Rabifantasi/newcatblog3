@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="max-w-4xl mx-auto p-4">
       <Image 
-        src="/7.png" 
+        src="/cutecat7.png" 
         alt="cat" 
         className="rounded-md mb-4" 
         width={1000} 

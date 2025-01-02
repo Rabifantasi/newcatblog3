@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="max-w-4xl mx-auto p-4">
       <Image 
-        src="/5.png" 
+        src="/cutecat5.png" 
         alt="About Cats" 
         className="rounded-md mb-4" 
         width={1000} 
